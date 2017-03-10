@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><html class="ie"><![endif]--> 
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>lisT+</title>
+    <meta name="author" content="Nicholas Graf">
+    <meta name="description" content="A simple list app for everyone.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+  <body>
+    <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> 
+    
+    
+    <div class="list-app">
+      <div class="list-wrap" id="fileInsert"> </div>
+      <!-- END .list-wrap --> 
+      
+      
+      <div class="list-cat-add removetut">
+        <div class="list-item-icon-cat-add trans grey"></div>
+      </div>
+      <!-- END .list-cat-add --> 
+      
+      
+      <div class="about-logo">lisT+</div>
+      
+      
+      <div class="tutorial">
+
+        <p><b>1. Click on the large <b>+</b> to create a new list category.</b></p>
+        <p><b>2. Click on a Category's <b>+</b> to create a new list item.</b></p>
+        <p><b>3. Select a category or list item to edit it.</b></p>
+        <p><b>4. Click the gear icon to access the settings for the category/list item:</b><br />
+          - Trashcan deletes the item.<br />
+          - Up/Down Arrow is drag drop to reorder.<br />
+          - Paint palette changes the background color of the category/list item.</p>
+        <p><b>5. Click the Menu Icon next to the category name to toggle list items.</b></p>
+        
+        <div class="center closehelp">Close</div>
+      </div>
+      
+      <div class="footer">
+        <!-- Admin Trigger --> <span class="admin-trigger"><a href="javascript:;"><span class="list-item-icon-settings"></span></a></span> 
+      </div>
+      <!-- END .footer --> 
+      
+      
+      <div class="admin" id="admin">
+        <a class="help" href="javascript:;">Help</a>
+        <!-- Save List --> <a class="save-list" href="javascript:;" download>Save lisT+</a> <!-- Load List+ from file--> 
+        <div class="replace-input"> <input class="upload-list" id="fileInput" type="file"> Load lisT+ </div>
+        <!-- Save LocalStorage --> <a class="delete-list-check" href="javascript:;">Delete lisT+</a> <!-- Toggle "Delete Confirmation" Alerts --> <a class="checkin-trigger" href="javascript:;">Delete Confirmation : <span class="on">ON</span><span class="off">OFF</span></a> <!-- Toggle Line Numbers --> <a class="line-number-trigger" href="javascript:;">Line Numbers : <span class="off">ON</span><span class="on">OFF</span></a> <span class="about-trigger"><a href="javascript:;">About</a></span> 
+        <div class="about-text" id="about">
+          <h1>lisT+</h1>
+          <p>A free, online and smart list app for your browser.</p>
+          <p><b>Features</b></p>
+          <p>&bull; Sortable Categories &amp; Items<br> &bull; Backgroud Color Options<br> &bull; Save your lisT+ to file<br> &bull; Upload your lisT+ from file<br> &bull; Delete entire lisT+<br> &bull; Delete confirmation toggle<br> &bull; List Numbers</p>
+        </div>
+      </div>
+      <!-- END .admin --> 
+      
+    </div>
+    <!-- END .list-app --> 
+    
+    <script src="js/vendor/jquery.2.1.4.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-60685093-1', 'auto');
+      ga('send', 'pageview');
+    </script> 
+    
+  </body>
+</html>
