@@ -32,12 +32,12 @@ body,html {
   height: 100%;
   color: #888;
   letter-spacing: 0;
-  font-size: 11px;
+  font-size: 10px;
   font-family: HelveticaNeue,arial,sans-serif;
 }
 
 .trans {
-  transition: all .25s ease;
+  transition: all .15s ease;
 }
 
 a,a:visited {
@@ -79,7 +79,7 @@ img {
     border-radius: .5em;
     color: #999;
     font-size: .75em;
-    width: 5em;
+    width: 10em;
     cursor: pointer;
 }
 
@@ -194,7 +194,7 @@ img {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  transition: all .5s ease;
+  transition: all .15s ease;
 }
 
 .list-item-icon-add,.list-item-icon-arrow,.list-item-icon-color,.list-item-icon-remove,.list-item-icon-settings {
@@ -486,6 +486,7 @@ img {
   padding: 1em 0 0;
   overflow: hidden;
   z-index: 999;
+  font-size: 1.2em;
   border-top: 2px solid #999;
 }
 
