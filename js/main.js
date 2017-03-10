@@ -1,26 +1,17 @@
-﻿
+﻿$(function() {
 
 
-
-
-
-$(function() {
-  
-  
   //Help
   $(document).on("click", ".help", function() {
       $(".tutorial").slideToggle("slow");
     });
-  
+
   // Close Help
   $(document).on("click", ".closehelp", function() {
       $(".tutorial").slideToggle("slow");
     });
-  
-  
-  
-  
-  
+
+
   function a() {
     $(".line-number")
       .remove()
@@ -200,7 +191,10 @@ $(function() {
     }), $(document)
     .on("click", ".delete-list-check", function() {
       $("body")
-        .prepend('<div class="popup-container"><div class="popup remove-category"><div class="icon-close close-popup">x</div><h1>Hold Up!</h1><p class="message">Are you sure you want to delete the whole LisT+?</p><div class="float-right"><a class="close-popup mr-10 cancel">Cancel</a><a class="delete-localstorage">Yes</a></div><br class="clear" /></div></div>'), $(".popup")
+        .prepend('<div class="popup-container"><div class="popup remove-category"><div class="icon-close close-popup">x</div>'+
+        '<h1>Hold Up!</h1><p class="message">Are you sure you want to delete the whole LisT+?</p>'+
+        '<div class="float-right"><a class="close-popup mr-10 cancel">Cancel</a><a class="delete-localstorage">Yes</a></div>'+
+        '<br class="clear" /></div></div>'), $(".popup")
         .fadeIn("fast")
     }), $(document)
     .on("click", ".delete-localstorage", function() {
@@ -251,12 +245,12 @@ $(function() {
         .removeClass("bg-blue")
         .rotateClass(i)
     }), 0 !== localStorage.length ? (
-           $(".list-wrap").html(localStorage.getItem("listplus")), 
-           $(".list-cat,.list-item").slideDown(), 
+           $(".list-wrap").html(localStorage.getItem("listplus")),
+           $(".list-cat,.list-item").slideDown(),
            $(".list-item-settings").removeClass("toggle"),
            $(".tutorial").hide(),
-           e(), 
-           f(), 
+           e(),
+           f(),
            d()
        ) : (e(), f()), window.setInterval(h, 2e3), $(document)
     .on("click", ".save-list", function() {

@@ -1,5 +1,5 @@
 #listpl.us
-##An easy to use To Do list.
+##A simple list app for anyone and everyone.
 Visit now at [http://listpl.us] (http://listpl.us)
 
 ###Features
@@ -8,3 +8,5 @@ Visit now at [http://listpl.us] (http://listpl.us)
 - Collapsible Groups
 - Save/Upload Settings
 - Local Storage Backup
+- Toggle List Item Numbers
+- Sortable Groups and List Items
