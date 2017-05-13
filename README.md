@@ -1,6 +1,5 @@
 #listpl.us
 ##A simple list app for anyone and everyone.
-Visit now at [http://listpl.us] (http://listpl.us)
 
 ###Features
 - Content Editable
